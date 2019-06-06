@@ -1,0 +1,338 @@
+/* body */
+body {
+    background: url("https://images.unsplash.com/photo-1485116041646-7df1be71034f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80") no-repeat center center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.blurb h2 {
+    color: #1c20ea;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #6da3f5;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.resort-card{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 5px solid rgba(255, 255 ,255 ,0.5);
+}
+
+.spacer {
+    font-size: 3rem;
+    color: rgb(147, 194, 255);
+}
+
+[type='radio'] {
+    display: none; 
+    }
+/* end of body */
+
+/* nav bar */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#mainNavbar .nav-link:hover {
+    color: #1c20ea;
+}
+
+#mainNavbar .navbar-brand{
+    color: #1c20ea;
+}
+
+.fixed-top {
+    background: #d6d6d6
+}
+
+.navbar.scrolled {
+    background: rgb(203, 221, 255);
+    transition: 500ms;
+}
+
+@media (max-width: 1300px) {
+    .headingGroup h1 {
+        font-size: 3rem;
+    }
+}
+.nav-padding{
+    padding-top: 50px
+}
+    /* end of navbar */
+
+    /* banner */
+.headingGroup span {
+    color: #1c20ea;
+}
+
+.headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.banner-img {
+    position:relative;
+    
+}
+.banner-img-text {
+    position:absolute;
+    bottom:0;
+    color: white;
+    padding:40% 20px;
+    width:100%;
+    text-align:center;
+}
+.store-img {
+    position:relative;
+}
+.store-img-text {
+    position:absolute;
+    bottom:15rem;
+    color: #1c20ea;
+    padding:0 20px;
+    width:100%;
+    text-align:center;
+}
+.store-img-text .btn{
+box-shadow: 0 0 20px rgb(0, 0, 0);
+color:#1c20ea;
+border-color:#1c20ea;
+background-color:white;
+}
+.maxHeight{
+    position: relative;
+}
+
+/* end of banner */
+
+/* cart */
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    background-color: rgb(203, 221, 255);
+    top: 3.2rem;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    width: 22rem;
+    padding: 2rem 1.5rem;
+    border-bottom: 0.4rem solid rgba(255, 255, 255, 0.4);
+    border-left: 0.4rem solid rgba(255, 255, 255, 0.4);
+}
+.hide-cart{
+    transform: translate(100%,0)
+}
+.cart-item{
+    transition: all 2s ease-in-out;
+}
+.cart-item-remove{
+    color: #ff9431;
+    transition: all 0.5s ease-in-out;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.cart-item-remove:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+.set-height-width{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+.cart-info:hover{
+    color: #1c20ea;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-color: #1c20ea;
+}
+.cart-info{
+    border: 2px solid black;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+/* end of cart */
+
+/* checkout */
+.checkout {
+    min-height: 20rem;
+    min-width: 35rem;
+    background-color: rgb(233, 241, 255);
+    margin: auto;
+    top: 110vh;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    width: 22rem;
+    padding: 2rem 1.5rem;
+    border: 0.4rem solid rgba(255, 255, 255, 0.4);
+    color: #1c20ea;
+    box-shadow: 0 0 0 110vh rgba(0, 0, 0, 0.3); 
+    opacity: 0;
+}
+
+.cd-form{
+    display: block !important;
+}
+.show-checkout{
+    opacity: 1;
+    transform: translate(0,-80vh);
+}
+.checkout .price{
+    color: rgb(147, 194, 255)
+}
+.checkout .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(203, 221, 255);
+    line-height: 3rem;
+}
+.checkout input{
+    border: 0;
+}
+.checkout input:focus {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.cardholder .label{
+    display: inline-block;
+    letter-spacing: 0.5px;
+    color: #8F92C3;
+    width: 100px;
+}
+.field{
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: #1c20ea;
+    background-color: rgb(233, 241, 255)
+}
+#expiry-date{
+    background-color: rgb(233, 241, 255);
+    border: 0;
+    border-radius: 4px;
+}
+.cardholder .info .field{
+    margin-left: 6rem;
+    max-width: 300px;
+    width: 300px;
+}
+.number .info .field{
+    margin-left: 2.9rem;
+    max-width: 300px;
+    width: 300px;
+}
+.cdBtnPay{
+    margin: auto;
+}
+.paymentName{
+    cursor:pointer;
+}
+.paypal{
+    min-width: 450px;
+}
+.selectColor{
+    background-image: linear-gradient(to right,rgb(203, 221, 255),#1c20ea);
+    pointer-events: none;
+
+}
+/* end of checkout */
+
+/* store */
+.single-item{
+    transition: all 0.3 linear;
+    background-color: rgb(203, 221, 255);
+}
+.single-item:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3)
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.store-img{
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img{
+    transform: scale(1.1);
+}
+.store-item-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: rgb(203, 221, 255);
+    border-top-left-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate(100%, 100%)
+}
+.img-container:hover .store-item-icon{
+    transform: translate(0, 0)
+}
+.store-item-icon:hover{
+    color: #ff9431
+}
+.store-item{
+    display: none;
+}
+.show {
+    display: block;
+}
+/* end of store */
+
+/* resort form */
+.resort-form {
+    background-color: rgb(203, 221, 255);
+    width: 100%;
+    min-height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #6da3f5;
+}
+.search-input {
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 56px;
+    background-color: white; 
+}
+.search-input input{
+    border: 0 !important;
+}
+
+.search-input input:focus {
+    border: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.popup-button-prompt{
+    line-height: 38px;
+    cursor:pointer;
+}
+.dropdown-menu {
+    width: 250px;
+}
+.people{
+    min-height: 3.7rem;
+}
+/* end of resort form */
